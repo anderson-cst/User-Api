@@ -52,12 +52,10 @@ public class UserService {
 		return users;		
 	}
 	
-	@Transactional(readOnly = true)
-	public Page<User> getAll(Pageable pageable){
-		Page<User> users = userRepository.findAll(pageable);
-		return users;	
-	}
-	
+	/*
+	 * @Transactional(readOnly = true) public Page<User> getAll(Pageable pageable){
+	 * Page<User> users = userRepository.findAll(pageable); return users; }
+	 */
 	
 	
 	

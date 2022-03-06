@@ -52,12 +52,11 @@ public class UserController {
 		return ResponseEntity.ok().body(users);
 	}
 	
-	@GetMapping("/{page}")
-	public ResponseEntity<Page<User>> getAllPage(Pageable pageable){
-		Page<User> users = userService.getAll(pageable);
-		return ResponseEntity.ok().body(users);
-	}
-	
+	/*
+	 * @GetMapping("/{page}") public ResponseEntity<Page<User>> getAllPage(Pageable
+	 * pageable){ Page<User> users = userService.getAll(pageable); return
+	 * ResponseEntity.ok().body(users); }
+	 */
 	
 	
 	
